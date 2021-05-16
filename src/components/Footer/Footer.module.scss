@@ -1,0 +1,31 @@
+.footer_wrapper {
+  background-color: #f8f8f8;
+  border-top: 1px solid #dddddd;
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    border-top: 1px solid #dddddd;
+    padding: 26px 15px;
+    background-color: #f8f8f8;
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      color: #000000;
+      font-size: 0.8em;
+      font-weight: 600;
+    }
+  }
+}

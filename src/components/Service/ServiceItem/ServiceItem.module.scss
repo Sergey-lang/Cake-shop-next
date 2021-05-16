@@ -1,0 +1,51 @@
+.service_block {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media screen and (min-width: 768px) {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+
+  .service {
+    margin-top: 40px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    .service_icon {
+      margin-bottom: 30px;
+
+      .icon {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    .service_info {
+      h3 {
+        font-size: 1.3em;
+        color: black;
+        margin-bottom: 15px;
+        line-height: 1.2;
+        margin-top: 0;
+      }
+
+      p {
+        font-size: 1.1em;
+        color: black;
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        margin: 0 0 15px 0;
+      }
+
+      .service_link {
+        margin-top: 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

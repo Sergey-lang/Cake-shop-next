@@ -1,0 +1,15 @@
+.best_prices_wrapper {
+  margin-top: 70px;
+  display: flex;
+
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    margin-top: 60px;
+  }
+
+  .best_prices_block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 38px;
+  }
+}
+

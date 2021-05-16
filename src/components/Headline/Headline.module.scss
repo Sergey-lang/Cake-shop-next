@@ -1,0 +1,47 @@
+.text_center {
+  text-align: center;
+
+  .icon {
+    margin-bottom: 0.7rem;
+    vertical-align: middle;
+    border-style: none;
+    max-width: 100%;
+    text-align: center;
+
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+
+  .title_heading {
+    margin-bottom: 37px;
+    font-family: 'Caveat', cursive;
+    font-size: 3.1em;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #000;
+    letter-spacing: -1px;
+    text-transform: none;
+    position: relative;
+
+    @media only screen and (max-width: 576px) {
+      padding-bottom: 0;
+      font-size: 2.5em;
+    }
+
+    &.on_sub_heading {
+      margin-bottom: 0;
+    }
+  }
+
+  .sub_heading {
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #666;
+    padding-top: 20px;
+    display: block;
+    font-style: italic;
+  }
+}

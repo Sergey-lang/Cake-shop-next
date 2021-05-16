@@ -1,0 +1,20 @@
+.view_link {
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s;
+    line-height: 1;
+    padding: 15px 30px;
+    font-size: 0.9em;
+    background: #be9c79;
+    color: #fff;
+    outline: #be9c79 solid 1px !important;
+    outline-offset: 2px;
+    border: 1px solid transparent;
+    position: relative;
+
+    &:hover {
+        background: transparent;
+        color: #be9c79;
+        border: 1px solid #be9c79;
+    }
+}

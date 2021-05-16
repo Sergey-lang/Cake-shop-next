@@ -1,0 +1,41 @@
+.menu {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    @media only screen and (max-width: 1198px) {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+        .navbar_nav {
+            display: flex;
+
+            .nav_item {
+                margin-left: 18px;
+                margin-right: 18px;
+
+                .link {
+                    font-size: 1.1em;
+                    font-weight: 600;
+                    color: #000000;
+                    transition: all .3s ease;
+                    padding: .5rem 1rem;
+
+                    &:hover {
+                        color: #be9c79;
+                    }
+                }
+            }
+        }
+    }
+}

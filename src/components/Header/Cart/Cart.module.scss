@@ -1,0 +1,257 @@
+.box_cart {
+  height: 100%;
+  width: 380px;
+  top: 0;
+  position: fixed;
+  transition: all 0.3s ease;
+  z-index: 12;
+  max-width: calc(100% - 20px);
+  background-color: #f7f7f7;
+
+  .relative {
+    height: 100%;
+    position: relative;
+
+    .mini_content {
+
+      .mini_cart_head {
+        .close_cart {
+          cursor: pointer;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 45px;
+          height: 45px;
+          color: #000;
+          border-right: 1px solid #dedede;
+          font-size: 12px;
+          text-transform: uppercase;
+          font-weight: 700;
+          text-align: center;
+          line-height: 47px;
+
+          .close_icon {
+            width: 14px;
+            height: auto;
+            fill: black;
+            vertical-align: middle;
+
+            &:hover {
+              filter: invert(38%) sepia(29%) saturate(2765%) hue-rotate(346deg) brightness(104%) contrast(36%);
+            }
+          }
+
+          &:hover {
+            color: #be9c79;
+          }
+
+          &:hover .close_icon {
+            fill: #be9c79;
+          }
+        }
+
+        .title {
+          line-height: 43px;
+          height: 45px;
+          color: #000;
+          font-weight: 600;
+          border-bottom: 1px solid #ecebeb;
+          padding-bottom: 0;
+          margin-bottom: 0;
+          text-align: center;
+          font-size: 1.2em;
+        }
+
+        .counter {
+          font-weight: 600;
+          display: block;
+          min-width: 45px;
+          height: 45px;
+          text-align: center;
+          line-height: 46px;
+          color: #000;
+          position: absolute;
+          right: 0;
+          top: 0;
+          border: 1px solid #ecebeb;
+          border-top: transparent;
+          border-right: transparent;
+        }
+      }
+
+      .mini_cart_bottom {
+        text-align: center;
+
+        .prod {
+          position: relative;
+          height: calc(100vh - 162px);
+          max-height: 100%;
+          overflow: auto;
+          padding: 0 20px;
+
+          .product_cart {
+            overflow: hidden;
+            position: relative;
+            text-align: left;
+
+            .cart_item {
+              .row {
+                border-bottom: 1px solid #e1e1e1;
+                align-items: flex-start;
+                position: relative;
+                padding: 20px 0;
+                display: flex;
+
+                .prod_img {
+                  width: 25%;
+
+                  img {
+                    vertical-align: middle;
+                    border-style: none;
+                    max-width: 100%;
+                  }
+                }
+
+                .prod_detail {
+                  width: 70%;
+                  padding-left: 20px;
+
+                  .prod_name {
+                    line-height: 14px;
+                    font-size: 1.75rem;
+                    font-weight: 600;
+                    margin-bottom: .5rem;
+                    letter-spacing: 0.8px;
+
+                    a {
+                      font-size: 16px;
+                      text-align: justify;
+                      color: #000;
+                      text-decoration: none;
+
+                      &:hover {
+                        color: #be9c79;
+                      }
+                    }
+                  }
+
+                  .prod_info {
+                    font-weight: 600;
+
+                    .prod_price {
+                      font-size: 0.9em;
+                      padding-top: 5px;
+                    }
+                  }
+                }
+
+                .prod_remove {
+                  width: 15%;
+
+                  a {
+                    position: absolute;
+                    top: 19px;
+                    right: 0;
+                    color: black;
+
+                    i {
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+
+                      &:before {
+                        content: '';
+                        background-image: url('../../../../public/static/image/header/delete.svg');
+                        background-size: 100%;
+                        width: 14px;
+                        height: 14px;
+                      }
+
+                      &:hover {
+                        filter: invert(38%) sepia(29%) saturate(2765%) hue-rotate(346deg) brightness(104%) contrast(36%);
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+
+
+      }
+
+      .sub_total {
+        display: flex;
+        justify-content: space-between;
+        height: 59px;
+        line-height: 59px;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 0 40px;
+        overflow: hidden;
+        bottom: 59px;
+        position: absolute;
+        width: 400px;
+        max-width: 100%;
+
+        .total_title {
+          font-size: 1em;
+          font-weight: 600;
+        }
+
+        .total_price {
+          width: auto;
+          font-weight: 600;
+          display: block;
+          color: #be9c79;
+        }
+      }
+
+      .action_checkout {
+        bottom: 0;
+        position: absolute;
+        width: 400px;
+        max-width: 100%;
+
+        .action_btn {
+          width: 50%;
+          display: block;
+          float: left;
+          font-weight: 600;
+          font-size: 12px;
+          text-transform: uppercase;
+          text-align: center;
+          letter-spacing: .2em;
+          height: 59px;
+          line-height: 61px;
+          color: #ffffff;
+          background-color: #2a2a2a;
+          transition: color 0.3s ease 0s, background-color 0.3s ease 0s;
+
+          .menu_title {
+            margin-left: 1rem;
+            font-weight: 600;
+            color: #fff;
+          }
+
+          &:last-child {
+            background-color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.box_background {
+  background-color: #000000c4;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  position: fixed;
+  overflow: auto;
+  width: 100vw;
+  height: 100vh;
+}

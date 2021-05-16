@@ -1,0 +1,57 @@
+.bread_crumb_page {
+  .bread_crumb_text {
+    background-image: url("https://wallup.net/wp-content/uploads/2018/03/23/563847-food-donut.jpg");
+    background-position: initial;
+    background-size: cover;
+    padding: 140px 0 140px;
+    text-align: center;
+
+    .title_page {
+      .title {
+        margin-bottom: 5px;
+        font-size: 2.2em;
+        font-weight: 600;
+        letter-spacing: 2px;
+        line-height: 1.2;
+        color: #ffffff
+      }
+    }
+
+    .bread_crumb {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0 0 40px 0;
+
+      .bread_crumb_link {
+        display: flex;
+        font-size: 0.8em;
+        font-weight: 600;
+        color: #ffffff;
+
+        i {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 10px;
+
+          &:before {
+            content: '';
+            transform: rotate(270deg);
+            background-image: url('../../../public/static/image/bread_crumb/icons8-expand-arrow-96.png');
+            background-size: 100%;
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+
+      span {
+        color: #ffffff;
+        font-size: 0.8em;
+        font-weight: 600;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,75 @@
+.subscribe {
+  flex: 0 0 25%;
+  max-width: 25%;
+
+  @media screen and (max-width: 991.98px) {
+    text-align: center;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .info_footer {
+    padding: 50px 0 40px 0;
+
+    @media (max-width: 576px) {
+      margin-bottom: 0;
+      padding: 20px 0 20px 00px;
+    }
+
+    .logo_wrapper {
+
+      .logo {
+        img {
+          width: 180px;
+          max-width: 100%;
+          height: auto;
+          vertical-align: middle;
+          border-style: none;
+        }
+      }
+
+    }
+
+    .content {
+      color: #000000;
+      font-weight: 600;
+      margin-top: 23px;
+      font-size: 0.8em;
+    }
+
+    .icon_list {
+      .list_inline {
+        margin-top: 30px;
+
+        .list_inline_item {
+          margin-right: .5rem;
+          display: inline-block;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .link {
+            display: inline-block;
+            color: #000000;
+            font-size: 16px;
+            border-radius: 50%;
+            margin: 0 5px 0 5px;
+            position: relative;
+
+            .icon {
+              width: 16px;
+              height: auto;
+              vertical-align: middle;
+              border-style: none;
+
+              &:hover {
+                filter: invert(38%) sepia(29%) saturate(2765%) hue-rotate(346deg) brightness(104%) contrast(36%);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

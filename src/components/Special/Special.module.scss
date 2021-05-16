@@ -1,0 +1,40 @@
+.special_wrapper {
+  margin-top: 70px;
+
+  .special_blocks {
+    display: flex;
+    flex-wrap: wrap;
+
+    .left_block {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      width: 100%;
+      position: relative;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      @media screen and (max-width: 768px) {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    .right_block {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+      width: 100%;
+      position: relative;
+      padding-right: 15px;
+      padding-left: 15px;
+
+      @media (max-width: 768px) {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}
