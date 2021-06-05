@@ -59,10 +59,9 @@ export default function HomePage() {
   return (
     <Page>
       <Slider/>
-      <Category/>
-      <Special/>
       <ProductsTable products={products}/>
-      <Service/>
+      <Category/>
+      {/*<Service/>*/}
       <Gallery/>
     </Page>
   );

@@ -15,7 +15,7 @@ export const ProductsTable: React.FC<PropsType> = ({ isHeadline = true, products
     <div className={style.container}>
       {
         isHeadline && (
-          <Headline headline={'Популярное'} subHeading={'Топ популярных тортов за месяц'}/>
+          <Headline headline={'Popular'} subHeading={'Топ популярных тортов за месяц'}/>
         )
       }
       <div className={s.best_prices_block}>

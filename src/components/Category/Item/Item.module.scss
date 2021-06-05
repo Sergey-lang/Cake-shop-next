@@ -35,16 +35,16 @@
 
       .info_link {
         display: inline-block;
-        color: black;
+        color: #000;
         transition: all .3s;
-        font-size: 1.8em;
+        font-size: 30px;
         font-weight: 500;
-        font-family: 'Caveat', cursive;
+        font-family: 'Dancing Script', cursive;
         text-align: center;
         line-height: 1;
 
-        &:hover {
-          color: #be9c79;
+        &:focus, &:hover {
+          color: #9c0646;
         }
       }
     }

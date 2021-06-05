@@ -8,13 +8,14 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "clsx": "^1.1.1",
     "next": "10.2.0",
+    "node-sass": "^5.0.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "axios": "^0.21.1",
-    "node-sass": "^5.0.0",
-    "ts-node-dev": "^1.1.6",
-    "react-responsive-carousel": "^3.2.18"
+    "react-responsive-carousel": "^3.2.18",
+    "ts-node-dev": "^1.1.6"
   },
   "devDependencies": {
     "@types/react": "^17.0.3",

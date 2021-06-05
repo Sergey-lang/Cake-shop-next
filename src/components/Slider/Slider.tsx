@@ -15,14 +15,13 @@ export const Slider: React.FC = () => {
               showArrows={false}
     >
       <SliderInfoBlock imageSrc={'/static/image/slider/slide5.1.jpg'}
-                       topTitle={'МУССОВЫЙ'}
-                       mediumTitle={'СОБЛАЗН'}
-                       buttonTitle={'Вариант для тех, кто любит сметанные торты, но ему не по вкусу шоколад'}
+                       mediumTitle={'Fruity cream cake'}
+                       buttonTitle={'Raspberries, dipped in cream, blended with mint leaves.'}
                        navLinkTitle={'ЗАКАЗАТЬ СЕЙЧАС'}/>
       <SliderInfoBlock imageSrc={'/static/image/slider/slide5.2.jpg'}
-                       topTitle={'БИСКВИТНЫЙ'}
-                       mediumTitle={'ДАМСКИЙ КАПРИЗ'}
-                       buttonTitle={'Сладкоежкам, обожающим мед, мы с удовольствием предложим медовый торт со сметанным кремом'}
+                       right
+                       mediumTitle={'Healthy Cake For you'}
+                       buttonTitle={'Raspberries, dipped in cream, blended with mint leaves.'}
                        navLinkTitle={'ЗАКАЗАТЬ СЕЙЧАС'}/>
     </Carousel>
   );

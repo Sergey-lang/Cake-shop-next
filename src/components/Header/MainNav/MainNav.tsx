@@ -10,17 +10,17 @@ export const MainNav: React.FC = () => {
         <ul className={s.navbar_nav}>
           <li className={s.nav_item}>
             <Link href="/">
-              <a className={s.link}>ГЛАВНАЯ</a>
+              <a className={s.link}>Главная</a>
             </Link>
           </li>
           <li className={s.nav_item}>
             <Link href="/shop">
-              <a className={s.link}>МАГАЗИН</a>
+              <a className={s.link}>Магазин</a>
             </Link>
           </li>
           <li className={s.nav_item}>
             <Link href="/blogs">
-              <a className={s.link}>БЛОГ</a>
+              <a className={s.link}>Блог</a>
             </Link>
           </li>
         </ul>
