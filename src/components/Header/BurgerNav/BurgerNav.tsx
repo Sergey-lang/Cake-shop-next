@@ -60,32 +60,20 @@ export const BurgerNav: React.FC<BurgerNavPropsType> = ({ visible, setVisible })
                                <span/>
                                <span/>
                            </span>
-                <span className={s.menu_title}>МЕНЮ</span>
-              </a>
-            </li>
-            <li className={s.top_tab}>
-              <a className={s.login}>
-                <Link href={''}>
-                  <span>
-                    <img className={s.login_icon}
-                         src={'/static/image/header/login.png'}
-                         alt="login"/>
-                  </span>
-                </Link>
-                <span className={s.login_link_text}>ВОЙТИ</span>
+                <span className={s.menu_title}>Меню</span>
               </a>
             </li>
           </div>
           <div className={s.tab_context}>
             <div className={s.tab_panel}>
               <div className={s.menu_horizon_list}>
-                <a className={s.list_menu_link} href="#">ГЛАВНАЯ</a>
+                <a className={s.list_menu_link} href="#">Главная</a>
               </div>
               <div className={s.menu_horizon_list}>
-                <a className={s.list_menu_link} href="#">МАГАЗИН</a>
+                <a className={s.list_menu_link} href="#">Магазин</a>
               </div>
               <div className={s.menu_horizon_list}>
-                <a className={s.list_menu_link} href="#">БЛОГ</a>
+                <a className={s.list_menu_link} href="#">Блог</a>
               </div>
             </div>
           </div>

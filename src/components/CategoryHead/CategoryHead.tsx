@@ -9,7 +9,7 @@ export const CategoryHead: React.FC = () => {
       <div className={s.bread_crumb_text}>
         <div className={s.title_page}>
           <h2 className={s.title}>
-            Products
+            Магазин
           </h2>
         </div>
         <div className={s.bread_crumb}>

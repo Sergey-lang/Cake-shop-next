@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
     ],
   };
   const secondBlock = {
-    title: 'Партнёры',
+    title: 'About me',
     navLinks: [
       { url: '', title: 'About Us' },
       { url: '', title: 'Privacy Policy' },
@@ -27,13 +27,11 @@ export const Footer: React.FC = () => {
     ],
   };
   const thirdBlock = {
-    title: 'Обо мне',
+    title: 'Contacts',
     navLinks: [
-      { url: '', title: 'Help Center' },
-      { url: '', title: 'Address Store' },
-      { url: '', title: 'Privacy Policy' },
-      { url: '', title: 'Receivers & Amplifiers' },
-      { url: '', title: 'Bakezy' },
+      { url: '', title: '+375 29 881 81 68' },
+      { url: '', title: 'help@example.com' },
+      { url: '', title: '1201 Broadway Suite' },
     ],
   };
 

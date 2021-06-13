@@ -27,7 +27,7 @@ export const SliderInfoBlock: React.FC<SliderInfoBlockPropsType> = (
     <div className={s.info_slide}>
       <img className={s.slide_img} src={imageSrc}/>
       <div className={clsx(s.box_content, right && s.right)}>
-        <div className={s.left_text}>
+        <div className={clsx(s.left_text, right && s.right)}>
           <div className={s.box_title2}>
             <h3 className={s.title_big}>
               {mediumTitle}

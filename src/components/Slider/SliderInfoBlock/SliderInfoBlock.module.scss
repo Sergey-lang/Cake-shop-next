@@ -23,20 +23,22 @@
     z-index: 2;
 
     &.right {
-      left: 50%;
+      right: 5%;
     }
 
     @media (max-width: 575.98px) {
+      &.right {
+        right: 5%;
+      }
       left: 5%;
     }
 
     .left_text {
       text-align: left;
-      font-family: "Playfair Display", serif;
-
       &.right {
         text-align: right !important;
       }
+      font-family: 'Montserrat Alternates', sans-serif;
 
       .box_title2 {
         .title_big {

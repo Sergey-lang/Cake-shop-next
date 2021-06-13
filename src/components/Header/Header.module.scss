@@ -1,12 +1,37 @@
 .header_wrapper {
   padding: 25px 0;
   transition: background-color 0.5s ease 0s, padding 0.5s ease 0s;
-  box-shadow: 0 2px 5px -2px #b1b1b1;
-  background: rgba(255, 255, 255, 0.5);
   z-index: 3;
-  position: sticky;
+  position: absolute;
   top: 0;
   width: 100%;
+
+  &.scroll {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 2px 5px -2px #b1b1b1;
+    left: 0;
+    transform: translateY(10);
+    transition: transform 6s ease;
+    animation: headerAppearing 3s;
+  }
+
+  @keyframes headerAppearing {
+    0% {
+      background-color: transparent;
+      color: transparent;
+    }
+    35% {
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 2px 5px -2px #b1b1b1;
+      color: rosybrown;
+    }
+    100% {
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 2px 5px -2px #b1b1b1;
+      color: rosybrown;
+    }
+  }
 
   .container {
     max-width: 1670px;

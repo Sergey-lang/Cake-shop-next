@@ -30,7 +30,8 @@
       margin-bottom: 30px;
       .title {
         color: #000000;
-        font-size: 1em;
+        font-family: 'Dancing Script', cursive;
+        font-size: 20px;
         font-weight: 600;
         line-height: 1.2;
 
@@ -38,7 +39,7 @@
           content: '';
           display: block;
           height: 1px;
-          width: 30px;
+          width: 50px;
           margin-top: 20px;
           background-color: #000000;
 
@@ -50,21 +51,22 @@
       }
 
       .link_list {
-        margin-top: 30px;
+        margin-top: 15px;
 
         @media (max-width: 768px) {
           margin-top: 10px;
         }
 
         .link {
-          font-weight: 600;
+          font-family: 'Montserrat Alternates', sans-serif;
+          font-weight: 500;
           line-height: 32px;
           color: #000000;
           transition: all .25s ease-in-out;
           font-size: 0.8em;
 
           &:hover {
-            color: #be9c79;
+            color: #9c0646;
           }
         }
       }

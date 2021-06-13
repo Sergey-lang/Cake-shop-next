@@ -3,8 +3,10 @@ import { ProductType } from './HomePage';
 import { CategoryHead } from '../components/CategoryHead/CategoryHead';
 import { ProductsTable } from '../components/ProductsTable/ProductsTable';
 import Page from '../components/Page';
+import { useRouter } from 'next/router';
 
 export default function ShopPage () {
+  const router = useRouter();
   const products: ProductType[] = [
     {
       img: '/static/image/best_prices/19.1.jpg',
@@ -50,6 +52,8 @@ export default function ShopPage () {
   ];
   return (
     <Page>
+      <CategoryHead/>
+
       <ProductsTable isHeadline={false} products={products}/>
     </Page>
   );

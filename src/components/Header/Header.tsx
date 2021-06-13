@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import s from './Header.module.scss';
 import { MainNav } from './MainNav/MainNav';
 import { BurgerNav } from './BurgerNav/BurgerNav';
 import { Cart } from './Cart/Cart';
 import Link from 'next/link';
+import clsx from 'clsx';
 
 export const Header: React.FC = () => {
-  let [menuVisible, setMenuVisible] = useState(false);
-  let [cartVisible, setCartVisible] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
+  const [cartVisible, setCartVisible] = useState(false);
+  const [isSticky, setSticky] = useState(false);
 
   const onClickMenuHandler = () => {
     setMenuVisible(true);
@@ -17,8 +19,23 @@ export const Header: React.FC = () => {
     setCartVisible(true);
   };
 
+  const listenScrollEvent = (event) => {
+    if (window.scrollY < 80) {
+      return setSticky(false);
+    } else if (window.scrollY > 80) {
+      return setSticky(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', listenScrollEvent);
+
+    return () =>
+      window.removeEventListener('scroll', listenScrollEvent);
+  }, []);
+
   return (
-    <div className={s.header_wrapper}>
+    <div className={clsx(s.header_wrapper, isSticky && s.scroll  )}>
       <div className={s.container}>
         <div className={s.header}>
           <a className={s.tab_link} href="#" onClick={onClickMenuHandler}>
