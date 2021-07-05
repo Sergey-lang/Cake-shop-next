@@ -20,7 +20,8 @@ export const ProductsTable: React.FC<PropsType> = ({ isHeadline = true, products
       }
       <div className={s.best_prices_block}>
         {
-          products.map((p, i) => <Product key={i}
+          products.map((p, i) => <Product key={p.id}
+                                          id={p.id}
                                           imgLinkSrc={p.img}
                                           productLinkTitle={p.title}
                                           price={p.price}

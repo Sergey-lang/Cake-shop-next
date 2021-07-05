@@ -7,48 +7,57 @@ import Head from 'next/head';
 
 const products: ProductType[] = [
   {
+    id: 1,
     img: '/static/image/best_prices/19.1.jpg',
     title: 'Triple Chocolate Fudge Party Cupcake',
     price: 20,
   },
   {
+    id: 2,
     img: '/static/image/best_prices/18.2.jpg',
     title: 'Cookies & Cream Cheesecake',
     price: 50,
   },
   {
+    id: 3,
     img: '/static/image/best_prices/17.1.jpg',
     title: 'Nut Buster Cake',
     price: 65,
   },
   {
+    id: 4,
     img: '/static/image/best_prices/20.1.jpg',
     title: 'Chocolate Truffle Birthday Cake',
     price: 25,
     oldPrice: 40,
   },
   {
+    id: 5,
     img: '/static/image/best_prices/19.1.jpg',
     title: 'Triple Chocolate Fudge Party Cupcake',
     price: 20,
   },
   {
+    id: 6,
     img: '/static/image/best_prices/20.1.jpg',
     title: 'Cookies & Cream Cheesecake',
     price: 50,
   },
   {
+    id: 7,
     img: '/static/image/best_prices/17.1.jpg',
     title: 'Nut Buster Cake',
     price: 65,
   },
   {
+    id: 8,
     img: '/static/image/best_prices/18.2.jpg',
     title: 'Cookies & Cream Cheesecake',
     price: 50,
   },
 ];
 export type ProductType = {
+  id: number
   img: string
   title: string
   price: number

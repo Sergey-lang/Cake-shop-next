@@ -3,6 +3,7 @@ import React from 'react';
 import s from './Product.module.scss';
 
 type ProductPropsType = {
+  id: number
   imgLinkUrl?: string
   imgLinkSrc: string
   imgLinkAlt?: string
@@ -15,6 +16,7 @@ type ProductPropsType = {
 
 export const Product: React.FC<ProductPropsType> = (
   {
+    id,
     imgLinkUrl = '',
     imgLinkSrc,
     imgLinkAlt = 'product',
@@ -30,7 +32,7 @@ export const Product: React.FC<ProductPropsType> = (
       <div className={s.product_item}>
         <div className={s.prod}>
           <div className={s.product_img_wrapper}>
-            <Link href={imgLinkUrl}>
+            <Link href={`/items/${id}`}>
               <img className={s.product_img} src={imgLinkSrc} alt={imgLinkAlt}/>
             </Link>
             <div className={s.product_action}>
